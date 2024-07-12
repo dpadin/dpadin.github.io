@@ -1,0 +1,616 @@
+/* ------------------------reset-------------------------------------  */
+*{
+    padding: 0;                     /* elimina separaciones de los elementos*/
+    margin : 0;                     /* elimina separaciones de los elementos*/
+    box-sizing:borderbox;           /* setea ta,año del elemento*/
+}
+/* ------------------------header --------------------------------------*/
+body                /* importar tipografia desde Google fonts   */                
+{
+    
+
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+main{
+    background-color:#bbb5a8;
+}
+.encabezado{                        /* aqui va la Marca*/
+    text-align: center ;    
+    width: 100%;
+    height: auto;   
+    background-color:#bbb5a8;
+    
+}
+.brand {                        /* este es el link de la marca */
+    width: 100%;
+    text-decoration: none;
+    font-size: xxx-large !important;
+    height: 65px;
+    color:rgb(96, 53, 10) !important;
+}
+
+.nav-contenedor{
+    text-align: center;
+}
+
+.navbar,
+.nav-link,
+.navbar-brand{
+    color: rgba(137, 60, 5, 0.809) !important;
+}
+ 
+.navbar{
+    background-color:#bbb5a8d6 !important;
+ 
+}
+.hero {
+        width: 100%;            /* Ocupa todo el ancho de la pantalla*/
+        height:auto;          /** Ajusta el tamaño del main a la cantidad de fotos        */
+        /* align-content: top;     Los elementos arrancan desde arriba */
+        
+     
+        background-color: rgba(211, 193, 175, 0.775);
+        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+              
+
+            }
+    
+    .hero h2
+        {
+            color:rgb(96, 53, 10);
+            text-align: center;
+            font-size:xx-large;
+        }
+    
+    .hero p                     /* Formatea el parrafo debajo del Bienvenidos    */
+    {
+        text-align:center;
+        padding-left: 25%;    /*  centra el parrafo en el centro de la pagina*/
+        width: 80%;         /*usa la mitad de la pagina */
+        
+        height: 50 px;
+        color:rgb(96, 53, 10);
+        font-size:large;
+    }
+
+.productos                  /** Clase para la pagina de productos*/
+    {
+ 
+        width: 100%;            /* Ocupa todo el ancho de la pantalla*/
+        height:auto;          /** Ajusta el tamaño del main a la cantidad de fotos        */
+        /* align-content: top;     Los elementos arrancan desde arriba */
+             
+        background-color: rgba(211, 193, 175, 0.775);
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .productos h2,
+    .productos p
+    {
+        color:rgb(96, 53, 10);
+        text-align: center;
+        font-size:xx-large;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:rgb(96, 53, 10);
+        
+    }
+    .productos p
+    {
+        font-size: medium;
+    }
+        
+/*--------------------------Tarjetas de productos-----------------------*/
+
+.tarjetas-de-producto
+    {
+ 
+      /* En esta seccion implementamos GRIDS*/
+        display:grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        grid-auto-rows:240px 240px; 
+        justify-items:center;              /* centra dentro del grid*/
+        background-color: rgba(211, 193, 175, 0.775);
+        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+
+.tarjetas-de-producto div       /*contenedor de la tarjeta de producto*/
+    {
+        
+        height: 200px;
+        width: 170px;
+        margin: 10px;
+        padding: 10px;
+        background-color:  #bbb5a8;
+ 
+        border-style: solid;
+        border-color: #bbb5a8;
+
+        position: relative;
+
+    }
+.tarjetas-de-producto img
+    {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        
+         
+    
+    }
+.tarjetas-de-producto a
+    {
+        background-color: #bbb5a891;
+        text-align: center;
+        color: rgb(96, 53, 10);
+        text-decoration: none;
+        font-size: small;
+       /* border-style: solid; */
+        padding: 2px;
+        margin: 2px; 
+        width: 135px;
+        position: absolute;
+        bottom: 25px;
+        left:10px;
+
+    }
+.tarjetas-de-producto h3
+{
+    background-color: #bbb5a843;
+    text-align: center;
+    font-size: large;
+    color: rgb(96, 53, 10);
+    width:100%;
+    padding: 0px;
+    margin-bottom: 5%;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.servicios                  /** Clase para la pagina de servicios*/
+    {
+        width: 100%;            /* Ocupa todo el ancho de la pantalla*/
+        height: auto;          /** deja lugar para una foto*/
+
+        padding-bottom: 10px;
+        
+        background-color: rgba(211, 193, 175, 0.775);
+        color:rgb(96, 53, 10);
+        text-align: center;        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+.servicios h2
+    {
+        font-size:xx-large;
+    }
+.servicios-p1{
+        font-size: x-large;
+}
+.servicios-p2{
+    font-size: medium;
+}
+
+
+.tarjetas-de-servicio
+    {
+ 
+      /* En esta seccion implementamos GRIDS*/
+        display:grid;
+        grid-template-columns:  1fr  ;
+        grid-auto-rows:240px; 
+        justify-items:center;              /* centra dentro del grid*/
+        background-color: rgba(211, 193, 175, 0.775);
+        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+.div-servicio{
+    width: 250px;
+    height: 250px;
+    
+    border-style: solid black 2px;
+    background-color: chocolate;
+    color: white;
+    position: relative;
+    
+}
+.div-servicio img{
+    width: 100%;    
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.div-servicio h4{
+    font-size: medium;
+    color: chocolate;
+    position: absolute;
+    bottom: 35px;    
+    left: 25%;
+}
+.div-servicio a{
+    font-size: small;
+    text-decoration: none;
+    background-color: chocolate;
+    color: white;
+    position: absolute;
+    bottom: 15px;    
+    left: 35%;
+}
+
+
+.nosotros                  /** Clase para la pagina de servicios*/
+    {   
+        width: 100%;            /* Ocupa todo el ancho de la pantalla*/
+        height: 300px;          /** deja lugar para una foto*/
+        text-align: center;   
+        background-color: rgba(211, 193, 175, 0.775);
+        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+.nosotros h2,
+.nosotros p       
+        {
+            color:rgb(96, 53, 10);
+            text-align: center;
+            font-size:xx-large;
+        }    
+
+.nosotros p       
+        {
+            font-size:medium;
+        }    
+
+.contacto                  /** Clase para la pagina de contactos*/
+    {
+        width: 100%;            /* Ocupa todo el ancho de la pantalla*/
+        height: 300px;          /** deja lugar para una foto*/
+        align-content: top;     /* Los elementos arrancan desde arriba */
+        background-color: rgba(211, 193, 175, 0.775);
+        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+.contacto h2
+    {
+        color:rgb(96, 53, 10);
+        text-align: center;
+        font-size:xx-large;
+        /*background-color: #bbb5a8;*/
+    }
+
+.contacto h3
+{
+    font-size: medium;
+    color: rgb(96, 53, 10);
+    text-align: center;
+    border-bottom: 1px;
+    border-color: white;
+}    
+
+.contacto form
+    {
+        text-align: center;
+    }
+.contacto form div input, textarea
+{
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    border-style: hidden;   
+    border-bottom: 2px;    
+    border-width: 1px;
+}
+
+
+.contacto form button
+{
+    background-color: #bbb5a8;
+    text-align: center;
+    font-size: medium;
+    color: rgb(96, 53, 10);
+    text-decoration: none;
+    font-size: small;
+    border-style: solid;
+    padding: 2px;
+    margin: 2px;
+}
+
+
+/* footer */
+footer
+    {
+       background-color: #bbb5a8;
+       height: 150px;
+       text-align: center;        
+       
+    }
+
+footer h3, h4
+{
+    color:rgb(96, 53, 10);
+    text-align: center;
+    font-size: medium;
+}
+
+.redes
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+
+}
+ 
+.redes div a
+{
+    width: 100%;
+}
+
+
+
+/* Aqui los iconos de Bootstrap*/
+/*bi-whatsapp bi bi-twitter  bi-instagram bi bi-tiktok*/
+ 
+.contactenos                                              /* Boton de whatsapp */
+    {
+        position: fixed;                                  /* Ubica al fondo a la derecha */
+        bottom: 50px;
+        right:50px;
+        text-align: center;
+        font-size: 15px;
+
+    }
+
+.contactenos img            /* Icono de whatsap*/
+    {
+        height: 30px;
+        width: 30px;
+    }
+
+.menu-superior ul li:hover
+    {
+    background-color: rgb(96, 53, 10);
+    border-radius: 30%;
+
+    }
+.menu-superior ul li a:hover
+    {
+    background-color: rgb(96, 53, 10);
+    font-size: large;
+    color: white;
+
+    }
+ 
+
+.menu-superior ul:hover
+    {
+    width: 40;
+    height: 40;
+    }
+
+.GridRedes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* no lleva commas entre los numeros!!!!!*/
+ /*   grid-template-rows:repeat(4);*/
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+ 
+    grid-template-areas: 
+    "fb fbt "
+    "x xt"
+    "insta instat"
+    "tik tikt"
+ 
+}
+
+
+.icono-fb 
+{
+    grid-area: fb;
+    text-align: right;
+    font-size: small;
+
+}
+
+.texto-fb
+{
+    grid-area: fbt;
+    text-align: left;
+}
+.texto-fb a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.texto-fb a:hover
+{      font-size: medium; }
+
+
+.icono-x 
+{
+    grid-area: x;
+    text-align: right;
+}
+
+.texto-x
+{
+    grid-area: xt;
+    text-align: left;
+}
+.texto-x a
+{
+    text-decoration: none;
+    color: black;
+}
+.texto-x a:hover
+{      font-size: medium; }
+
+.icono-instagram 
+{
+    grid-area: insta;
+    text-align:right;
+}
+.texto-instagram
+{
+    grid-area: instat;
+    text-align:left;
+}
+.texto-instagram a
+{
+    text-decoration: none;
+    color: black;
+}
+.texto-instagram a:hover
+{      font-size: medium; }
+.icono-tiktok
+{
+    grid-area: tik;
+    text-align: right;
+}
+.texto-tiktok
+{
+    grid-area: tikt;
+    text-align: left;
+}
+.texto-tiktok a
+{
+    text-decoration: none;
+    color: black;
+}
+.texto-tiktok a:hover
+{      font-size: medium; }
+.tarjetas-de-producto a:hover   /* Cambia apariencia al pasar el puntero sobre icons*/
+
+
+{
+        background-color: rgb(96, 53, 10);
+        font-size: large;
+        color: white;
+    }
+
+.tarjetas-de-producto div:hover
+    {
+    
+        border-style: solid;
+        border-width:  2px;
+        border-color: black;
+    
+    }
+
+@media screen and (max-width:578px)         /* cambia el grd a 2 columnas x responsive */
+    {
+        .tarjetas-de-producto
+        {
+            grid-template-columns:   1fr 1fr;
+            grid-auto-rows:240px 240px; 
+            
+        }
+        .tar-prod-5
+        {
+                grid-column:span 2;
+        }
+    }
+@media screen and (max-width:382px)         /* cambia el grd a 1 columna x responsive */
+    {
+        .tarjetas-de-producto
+        {
+            grid-template-columns:  1fr;
+            grid-auto-rows:240px; 
+            
+        }
+        .tar-prod-5
+        {
+                grid-column:span none;
+        }
+        .productos h2     /* achica la fuente    */
+        {
+            font-size:medium;
+         
+        }
+
+        .productos p                     /* achica la fuente    */
+        {
+            font-size:medium
+        }
+        .encabezado
+        {
+            font-size: medium;
+        }
+        .encabezado ul li a
+        {
+            font-size:smaller;
+        }
+    }
+    
+
+    /** Aqui las mosificaciones a la clase del carousel de Bootstrap*/
+
+    .carousel-item{                 /* Este es el espacio de la imagen del carousel*/
+        height: 300px;  
+        margin: 10px;
+    }
+
+    .carousel-item img{                 /* Este es el espacio de la imagen del carousel*/
+        height: 100%;
+        width: 80%;
+        object-fit: cover;
+    }
+
+
+    .carousel-item p{                 /* leyenda del carousel caption*/
+        text-align: left;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.522);
+        width: fit-content;
+        padding:2px;
+        }
+
+        .carousel-item a{                 /* leyenda del carousel button*/
+
+            text-decoration: none;
+            }
+
+            .carousel-item h3{                 /* texto del boton sobre el carousel*/
+                text-align: left;
+                margin: 5px;
+                padding: 5px;
+                border-radius: 5%;
+                color:white;
+                background-color:rgba(96, 53, 10, 0.587);
+                width:fit-content;
+        
+        }      
+
+
