@@ -11,15 +11,20 @@ body                /* importar tipografia desde Google fonts   */
 
         @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     }
-main{
-    background-color:#bbb5a8;
-}
+
+
 .encabezado{                        /* aqui va la Marca*/
     text-align: center ;    
     width: 100%;
     height: auto;   
     background-color:#bbb5a8;
+        
+}
+
+.encabezado h2{
+    font-size: xx-large;
     
 }
 .brand {                        /* este es el link de la marca */
@@ -385,8 +390,8 @@ footer h3, h4
 .contactenos                                              /* Boton de whatsapp */
     {
         position: fixed;                                  /* Ubica al fondo a la derecha */
-        bottom: 50px;
-        right:50px;
+        bottom: 10px;
+        right:20px;
         text-align: center;
         font-size: 15px;
 
@@ -512,8 +517,6 @@ footer h3, h4
 .texto-tiktok a:hover
 {      font-size: medium; }
 .tarjetas-de-producto a:hover   /* Cambia apariencia al pasar el puntero sobre icons*/
-
-
 {
         background-color: rgb(96, 53, 10);
         font-size: large;
@@ -531,6 +534,11 @@ footer h3, h4
 
 @media screen and (max-width:578px)         /* cambia el grd a 2 columnas x responsive */
     {
+        .encabezado h2
+        {
+            font-size: medium;
+        }
+
         .tarjetas-de-producto
         {
             grid-template-columns:   1fr 1fr;
@@ -540,6 +548,14 @@ footer h3, h4
         .tar-prod-5
         {
                 grid-column:span 2;
+        }
+        .redes
+        {
+            width: 50%;
+        }
+        footer
+        {
+            height: auto;
         }
     }
 @media screen and (max-width:382px)         /* cambia el grd a 1 columna x responsive */
@@ -556,9 +572,33 @@ footer h3, h4
         }
         .productos h2     /* achica la fuente    */
         {
-            font-size:medium;
-         
+            font-size:medium;         
         }
+
+        .encabezado h2{                     /*Achica el tittulo*/
+                font-size: small;
+        }
+        
+        .hero{              /* achica para comprimir el parrafo */
+         
+            height: auto;
+        }
+        .hero h2{
+                font-size: small;
+        }
+        .hero p{
+            width: 100%;
+            text-align: center;
+            font-size:small;
+
+        }
+        .redes
+        {
+            width: 40%;
+            height: auto;
+        }
+
+    }
 
         .productos p                     /* achica la fuente    */
         {
@@ -572,7 +612,6 @@ footer h3, h4
         {
             font-size:smaller;
         }
-    }
     
 
     /** Aqui las mosificaciones a la clase del carousel de Bootstrap*/
