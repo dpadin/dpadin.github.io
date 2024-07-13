@@ -14,31 +14,15 @@ body                /* importar tipografia desde Google fonts   */
 
     }
 
-
-.encabezado{                        /* aqui va la Marca*/
-    text-align: center ;    
-    width: 100%;
-    height: auto;   
-    background-color:#bbb5a8;
-        
-}
-
-.encabezado h2{
-    font-size: xx-large;
     
+.navbar-brand img
+{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
 }
-.brand {                        /* este es el link de la marca */
-    width: 100%;
-    text-decoration: none;
-    font-size: xxx-large !important;
-    height: 65px;
-    color:rgb(96, 53, 10) !important;
-}
-
-.nav-contenedor{
-    text-align: center;
-}
-
+ 
 .navbar,
 .nav-link,
 .navbar-brand{
@@ -46,9 +30,36 @@ body                /* importar tipografia desde Google fonts   */
 }
  
 .navbar{
+   
     background-color:#bbb5a8d6 !important;
- 
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-between!important;
+    align-items: center !important;
+    position:relative;
 }
+
+
+
+.navbar-toggler {                   /* tuve q usar position para ponerlo a la derecha*/
+    position:absolute;
+    right: 20px;
+    top:25px;
+
+}
+.dropdown-menu{
+    background-color: #bbb5a8 !important;
+ 
+
+}
+
+.container-fluid{
+    width:fit-content !important;
+ 
+    
+}
+
+
 .hero {
         width: 100%;            /* Ocupa todo el ancho de la pantalla*/
         height:auto;          /** Ajusta el tamaño del main a la cantidad de fotos        */
@@ -62,9 +73,16 @@ body                /* importar tipografia desde Google fonts   */
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-              
+        }
 
-            }
+        .hero p                     /* Formatea el parrafo debajo del Bienvenidos    */
+        {
+            text-align:center;
+                  
+            height: auto;
+            color:rgb(96, 53, 10);
+            font-size:large;
+        }
     
     .hero h2
         {
@@ -73,119 +91,94 @@ body                /* importar tipografia desde Google fonts   */
             font-size:xx-large;
         }
     
-    .hero p                     /* Formatea el parrafo debajo del Bienvenidos    */
-    {
-        text-align:center;
-        padding-left: 25%;    /*  centra el parrafo en el centro de la pagina*/
-        width: 80%;         /*usa la mitad de la pagina */
-        
-        height: 50 px;
-        color:rgb(96, 53, 10);
-        font-size:large;
-    }
 
-.productos                  /** Clase para la pagina de productos*/
-    {
+/*-------------------------Productos************************************* */
+.productos-main
+        {
+            background-color: rgba(211, 193, 175, 0.775);
+            width: 100%;            /* Ocupa todo el ancho de la pantalla*/
+            height:auto;          /** Ajusta el tamaño del main a la cantidad de fotos        */
+            text-align: center;
+            color:rgb(96, 53, 10);
+            
+            background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
  
-        width: 100%;            /* Ocupa todo el ancho de la pantalla*/
-        height:auto;          /** Ajusta el tamaño del main a la cantidad de fotos        */
-        /* align-content: top;     Los elementos arrancan desde arriba */
-             
-        background-color: rgba(211, 193, 175, 0.775);
-        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
-        
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+        .productos h2
+        {
+            text-align: center;
+            font-size:xx-large; 
+        }
+        .productos p
+        {
+            text-align: center;
+            font-size:x-large;
+        }    
 
-    .productos h2,
-    .productos p
-    {
-        color:rgb(96, 53, 10);
-        text-align: center;
-        font-size:xx-large;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color:rgb(96, 53, 10);
-        
-    }
-    .productos p
-    {
-        font-size: medium;
-    }
-        
 /*--------------------------Tarjetas de productos-----------------------*/
 
 .tarjetas-de-producto
-    {
- 
-      /* En esta seccion implementamos GRIDS*/
-        display:grid;
-        grid-template-columns:  1fr 1fr 1fr;
-        grid-auto-rows:240px 240px; 
-        justify-items:center;              /* centra dentro del grid*/
-        background-color: rgba(211, 193, 175, 0.775);
-        
-        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
-        
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-
-.tarjetas-de-producto div       /*contenedor de la tarjeta de producto*/
-    {
-        
-        height: 200px;
-        width: 170px;
-        margin: 10px;
-        padding: 10px;
-        background-color:  #bbb5a8;
- 
-        border-style: solid;
-        border-color: #bbb5a8;
-
-        position: relative;
-
-    }
-.tarjetas-de-producto img
-    {
+        {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-        
-         
-    
-    }
-.tarjetas-de-producto a
-    {
-        background-color: #bbb5a891;
-        text-align: center;
-        color: rgb(96, 53, 10);
-        text-decoration: none;
-        font-size: small;
-       /* border-style: solid; */
-        padding: 2px;
-        margin: 2px; 
-        width: 135px;
-        position: absolute;
-        bottom: 25px;
-        left:10px;
+            height: auto;
+   
+          
+            display:grid;
+            grid-template-columns:  1fr 1fr 1fr;
+            grid-auto-rows:360px; 
+            justify-items:center;     
 
+        }
+
+        .tarjetas-de-producto div       /*contenedor de la tarjeta de producto*/
+        {
+            
+            height: 300px;
+            width: 270px;
+            background-color:  #bbb5a8;
+            border-style: solid;
+            border-color: #bbb5a8;
+            position: relative;
+    
+        }
+    .tarjetas-de-producto img
+        {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+        }
+    .tarjetas-de-producto a
+        {
+            background-color: #593e03;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-size: small;
+           /* border-style: solid; */
+     
+            width: 100%;
+            position: absolute;
+            bottom: 35px;
+            left:0px;
+    
+        }
+    .tarjetas-de-producto h3
+    {
+        background-color: #bbb5a843;
+        text-align: center;
+        font-size: large;
+        color: rgb(96, 53, 10);
+        width:100%;
+        padding: 0px;
+        margin-bottom: 5%;
+        position: absolute;
+        bottom: 0px;
     }
-.tarjetas-de-producto h3
-{
-    background-color: #bbb5a843;
-    text-align: center;
-    font-size: large;
-    color: rgb(96, 53, 10);
-    width:100%;
-    padding: 0px;
-    margin-bottom: 5%;
-    position: absolute;
-    bottom: 0px;
-}
+
 
 
 .servicios                  /** Clase para la pagina de servicios*/
@@ -532,88 +525,79 @@ footer h3, h4
     
     }
 
-@media screen and (max-width:578px)         /* cambia el grd a 2 columnas x responsive */
+    
+@media screen and (max-width:880px)   
     {
-        .encabezado h2
+        .productos-main
         {
-            font-size: medium;
-        }
-
-        .tarjetas-de-producto
-        {
-            grid-template-columns:   1fr 1fr;
-            grid-auto-rows:240px 240px; 
             
         }
-        .tar-prod-5
-        {
-                grid-column:span 2;
-        }
-        .redes
-        {
-            width: 50%;
-        }
-        footer
-        {
-            height: auto;
-        }
-    }
-@media screen and (max-width:382px)         /* cambia el grd a 1 columna x responsive */
-    {
         .tarjetas-de-producto
         {
-            grid-template-columns:  1fr;
-            grid-auto-rows:240px; 
-            
+            grid-template-columns:  1fr 1fr;
+            grid-auto-rows:360px; 
+            height: 1100px;
         }
         .tar-prod-5
         {
                 grid-column:span none;
         }
-        .productos h2     /* achica la fuente    */
-        {
-            font-size:medium;         
-        }
-
-        .encabezado h2{                     /*Achica el tittulo*/
-                font-size: small;
-        }
-        
-        .hero{              /* achica para comprimir el parrafo */
-         
-            height: auto;
-        }
-        .hero h2{
-                font-size: small;
-        }
-        .hero p{
-            width: 100%;
-            text-align: center;
-            font-size:small;
-
-        }
-        .redes
-        {
-            width: 40%;
-            height: auto;
-        }
-
     }
 
-        .productos p                     /* achica la fuente    */
-        {
-            font-size:medium
-        }
-        .encabezado
-        {
-            font-size: medium;
-        }
-        .encabezado ul li a
-        {
-            font-size:smaller;
-        }
+@media screen and (max-width:590px)         /* cambia el grd a 2 columnas x responsive */
+{
+    .tarjetas-de-producto
+    {
+        grid-template-columns:  1fr;
+        grid-auto-rows:360px; 
+        height: auto;
+    }
+    .tar-prod-5
+    {
+            grid-column:span none;
+    }
+
+
+    .navbar-brand img
+    {
+        height: 25px;
+        width: 25px;
+        object-fit: cover;
+    }
+    .navbar-toggler
+    {                   /* tuve q usar position para ponerlo a la derecha*/
+        right: 20px;
+        top:15px;
     
 
+    }
+    .hero{              /* achica para comprimir el parrafo */
+     
+        height: auto;
+    }
+    .hero h2 { font-size:small; }
+    .productos h2  { font-size:small; }
+    .hero p
+    {
+        width: 100%;
+        text-align: center;
+        font-size:x-small;
+    }
+
+    .productos p
+    {
+        width: 100%;
+        text-align: center;
+        font-size:xx-small !important;
+    }
+    .redes
+    {
+        width: 40%;
+        height: auto;
+    }
+
+}
+ 
     /** Aqui las mosificaciones a la clase del carousel de Bootstrap*/
 
     .carousel-item{                 /* Este es el espacio de la imagen del carousel*/
