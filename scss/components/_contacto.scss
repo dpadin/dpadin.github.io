@@ -1,0 +1,56 @@
+.contacto                  /** Clase para la pagina de contactos*/
+    {
+        width: 100%;            /* Ocupa todo el ancho de la pantalla*/
+        height: 300px;          /** deja lugar para una foto*/
+        align-content: top;     /* Los elementos arrancan desde arriba */
+        background-color: $color-fondo-body;
+        color: $color-fuente;
+        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    h1
+        {
+            
+            text-align: center;
+            font-size:xx-large;
+            /*background-color: #bbb5a8;*/
+        }
+
+    h3
+        {
+            font-size: medium;
+            text-align: center;
+            border-bottom: 1px;
+            border-color: white;
+        }    
+
+    form
+        {
+            text-align: center;
+        }
+        div input, textarea
+            {
+                background-color: transparent;
+                width: 100%;
+                text-align: center;
+                border-style: hidden;   
+                border-bottom: 2px;    
+                border-width: 1px;
+            }
+        button
+            {
+                background-color: #bbb5a8;
+                text-align: center;
+                font-size: medium;
+                color: $color-fuente;
+                text-decoration: none;
+                font-size: small;
+                border-style: solid;
+                padding: 2px;
+                margin: 2px;
+            }

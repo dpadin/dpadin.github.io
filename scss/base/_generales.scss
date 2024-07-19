@@ -1,0 +1,24 @@
+/* ------------------------reset-------------------------------------  */
+*{
+    padding: 0;                     /* elimina separaciones de los elementos*/
+    margin : 0;                     /* elimina separaciones de los elementos*/
+    box-sizing:borderbox;           /* setea ta,año del elemento*/
+}
+
+$color-header:rgba(96, 53, 10, 0.587);
+$color-footer:rgba(96, 53, 10, 0.587);
+
+$color-fondo-body:rgba(211, 193, 175, 0.775);
+$color-fuente:rgb(96, 53, 10);
+
+
+body                /* importar tipografia desde Google fonts   */                
+{
+    
+
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:rgb(96, 53, 10) ;
+        background-color: $color-fondo-body;
+                
+}

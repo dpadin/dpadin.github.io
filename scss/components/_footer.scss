@@ -1,0 +1,146 @@
+footer {
+        background-color: $color-footer;
+        color: $color-fuente;
+        height: auto;
+        text-align: center;
+ 
+        }
+
+
+        h3,
+        h4 {
+            color: rgb(96, 53, 10);
+            text-align: center;
+            font-size: medium;
+            }
+
+
+.redes {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: small;
+
+        }
+
+.redes div a 
+            {
+            width: 100%;
+            text-decoration: none;
+            }
+.GridRedes{
+    color: $color-fuente;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* no lleva commas entre los numeros!!!!!*/
+    /*   grid-template-rows:repeat(4);*/
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    
+    grid-template-areas: 
+    "fb fbt "
+    "x xt"
+    "insta instat"
+    "tik tikt"
+    
+    }
+.icono-fb 
+{
+    grid-area: fb;
+    text-align: right;
+    font-size: small;
+
+}
+
+.texto-fb
+{
+    grid-area: fbt;
+    text-align: left;
+}
+.texto-fb a
+{
+    text-decoration: none;
+    color: $color-fuente;
+    &:hover{
+            font-size: medium;
+            }
+}
+
+.icono-x 
+{
+    grid-area: x;
+    text-align: right;
+}
+
+.texto-x
+{
+    grid-area: xt;
+    text-align: left;
+}
+.texto-x a
+{
+    text-decoration: none;
+    color: $color-fuente;
+    &:hover{
+        font-size: medium;
+        }
+}
+
+
+.icono-instagram 
+{
+    grid-area: insta;
+    text-align:right;
+}
+.texto-instagram
+{
+    grid-area: instat;
+    text-align:left;
+}
+.texto-instagram a
+{
+    text-decoration: none;
+    color: $color-fuente;
+    &:hover{
+        font-size: medium;
+        }
+}
+
+.icono-tiktok
+{
+    grid-area: tik;
+    text-align: right;
+}
+.texto-tiktok
+{
+    grid-area: tikt;
+    text-align: left;
+}
+.texto-tiktok a
+{
+    text-decoration: none;
+    color: $color-fuente;
+    &:hover{
+        font-size: medium;
+        }
+}
+
+
+
+.contactenos
+
+/* Boton de whatsapp */
+    {
+    position: fixed;
+    /* Ubica al fondo a la derecha */
+    bottom: 10px;
+    right: 20px;
+    text-align: center;
+    font-size: 15px;
+
+    }
+
+    img
+
+    /* Icono de whatsap*/
+        {
+        height: 30px;
+        width: 30px;
+    }

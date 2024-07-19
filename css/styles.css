@@ -528,10 +528,6 @@ footer h3, h4
     
 @media screen and (max-width:880px)   
     {
-        .productos-main
-        {
-            
-        }
         .tarjetas-de-producto
         {
             grid-template-columns:  1fr 1fr;

@@ -1,0 +1,82 @@
+.servicios                  /** Clase para la pagina de servicios*/
+    {
+        width: 100%;            /* Ocupa todo el ancho de la pantalla*/
+        height: auto;          /** deja lugar para una foto*/
+
+        padding-bottom: 10px;
+        
+        background-color: $color-fondo-body;
+        color: $color-fuente;
+
+        text-align: center;        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    h1
+    {
+        font-size:xx-large;
+    }
+.servicios-p1
+    {
+        font-size: x-large;
+    }   
+.servicios-p2
+    {
+    font-size: medium;
+    }
+
+.tarjetas-de-servicio
+    {
+ 
+      /* En esta seccion implementamos GRIDS*/
+        display:grid;
+        grid-template-columns:  1fr  ;
+        grid-auto-rows:240px; 
+        justify-items:center;              /* centra dentro del grid*/
+        background-color: rgba(211, 193, 175, 0.775);
+        
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+.div-servicio
+    {
+    width: 250px;
+    height: 250px;
+    
+    border-style: solid black 2px;
+    background-color: chocolate;
+    color: white;
+    position: relative;
+    }
+.div-servicio img
+        {
+        width: 100%;    
+        height: 100%;
+        object-fit: cover;
+        }
+
+.div-servicio h4
+        {
+        font-size: medium;
+        color: chocolate;
+        position: absolute;
+        bottom: 35px;    
+        left: 25%;
+        }
+.div-servicio a
+        {
+        font-size: small;
+        text-decoration: none;
+        background-color: chocolate;
+        color: white;
+        position: absolute;
+        bottom: 15px;    
+        left: 0%;
+        }

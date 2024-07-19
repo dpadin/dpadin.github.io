@@ -1,0 +1,78 @@
+@media screen and (max-width:880px)   
+    {
+        .tarjetas-de-producto
+        {
+            grid-template-columns:  1fr 1fr;
+            grid-auto-rows:360px; 
+            height: 1100px;
+        }
+        .tar-prod-5
+        {
+                grid-column:span none;
+        }
+    }
+    @media screen and (max-width:590px)         /* cambia el grd a 2 columnas x responsive */
+    {
+        .tarjetas-de-producto
+        {
+            grid-template-columns:  1fr;
+            grid-auto-rows:360px; 
+            height: auto;
+        }
+        .tar-prod-5
+        {
+                grid-column:span none;
+        }
+    
+    
+        .navbar-brand img
+        {
+            height: 35px;
+            width: 35px;
+            object-fit: cover;
+        }
+        .navbar-toggler
+        {                   /* tuve q usar position para ponerlo a la derecha*/
+            right: 20px;
+            top:15px;
+        
+    
+        }
+        .hero{              /* achica para comprimir el parrafo */
+         
+            height: auto;
+        }
+        .hero h2 { font-size:x-small; }
+        .productos h2  { font-size:small; }
+        .hero p
+        {
+            width: 100%;
+            text-align: center;
+            font-size:xx-small;
+        }
+    
+        .productos p
+        {
+            width: 100%;
+            text-align: center;
+            font-size:xx-small !important;
+        }
+    
+        .servicios h2  { font-size:small; }
+        .servicios-p1  { font-size:x-small;}
+        .servicios-p2  { font-size:x-small; }       
+    
+        .contacto h2  { font-size:small; }
+        .contacto h3  { font-size:x-small; }
+        
+        .nosotros h2  { font-size:small; }
+        .nosotros h3  { font-size:x-small; }
+    
+        .footrt {height: auto;}
+        .redes
+        {
+            width: 40%;
+            height: auto;
+        }
+        .redes h4 {font-size: x-small;}
+    }

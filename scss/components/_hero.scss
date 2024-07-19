@@ -1,0 +1,71 @@
+    .hero
+         {
+        width: 100%;
+        /* Ocupa todo el ancho de la pantalla*/
+        height: auto;
+        /** Ajusta el tamaño del main a la cantidad de fotos        */
+
+        color: rgb(96, 53, 10);
+
+        background-color: rgba(211, 193, 175, 0.775);
+
+        background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+
+        h1 {
+            color: rgb(96, 53, 10);
+            text-align: center;
+            font-size: xx-large;
+            }
+
+        p                     /* Formatea el parrafo debajo del Bienvenidos    */
+            {
+                text-align:center;
+                    
+                height: auto;
+                color:rgb(96, 53, 10);
+                font-size:large;
+            }
+
+ 
+/** Aqui las mosificaciones a la clase del carousel de Bootstrap*/
+
+.carousel-item{                 /* Este es el espacio de la imagen del carousel*/
+    height: 300px;  
+    margin: 10px;
+    }
+
+.carousel-item img{                 /* Este es el espacio de la imagen del carousel*/
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+    }
+
+
+.carousel-item p{                 /* leyenda del carousel caption*/
+    text-align: left;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.522);
+    width: fit-content;
+    padding:2px;
+    }
+
+.carousel-item a{                 /* leyenda del carousel button*/
+
+    text-decoration: none;
+    }
+
+.carousel-item h3{                 /* texto del boton sobre el carousel*/
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5%;
+    color:white;
+    background-color:rgba(96, 53, 10, 0.587);
+    width:fit-content;
+
+    }      

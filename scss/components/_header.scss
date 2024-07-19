@@ -1,0 +1,33 @@
+.navbar{
+
+        /*background-color:#bbb5a8d6 !important;*/
+        background-color: $color-header;
+        color: $color-fuente !important;
+
+        display: flex ;
+        flex-direction: row ;
+        justify-content: space-between!important;
+        align-items: center !important;
+        position:relative;
+        }
+.navbar-brand img
+{
+        margin: 10px;
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+}
+.navbar-toggler {                   /* tuve q usar position para ponerlo a la derecha*/
+        position:absolute;
+        right: 20px;
+        top:25px;
+
+}
+.dropdown-menu
+    {
+        background-color: #bbb5a8 !important;
+    }
+
+.container-fluid{
+    width:fit-content !important;
+    }

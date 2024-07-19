@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/estilos.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Esta linea linke Bootstrap-->
@@ -19,7 +19,7 @@
 
 <body> <!-- Aqui arranca el cuerpo de la pagina. Aplica formato usando class-->
 
-        
+<header>
 <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="./index.html">
                 <img src="./img/Almavivalogo2.png" alt="">
@@ -70,57 +70,60 @@
                 </div>
         </div>
 </nav>
-        <main> <!-- Aqui empieza la parte principal de la pagina-->
-                <section class="hero">
-                        <h2>Bienvenidos a AlmaViva Home & Deco</h2>
-                        <p>Imagina un lugar donde cada rincón te susurra paz y alegría. Un espacio que te abraza con calidez y te invita a soñar despierto. Un refugio donde tu esencia se refleja en cada detalle</p>
-  
-                        <!-- comienza el codigo agregado por bootstrap-->
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="4000">
-                                                <img src="./img/Vela-sojs-prod.jpg" class="d-block w-100" alt="...">
-                                                <div class="carousel-caption ">
-                                                        <a href="./pages/productos.html">
-                                                                <h3>Velas de Soja </h3>
-                                                        </a>
-                                                        <p>Aromas para tu hogar.</p>
-                                                </div>
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="4000">
-                                                <img src="./img/almohadones.jpg" class="d-block w-100" alt="...">
-                                                <div class="carousel-caption ">
-                                                        <a href="./pages/productos.html">
-                                                                <h3>Almohadones </h3>
-                                                        </a>
-                                                        <p>Dale estilo a tu descanso .</p>
-                                                </div>
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="4000">
-                                                <img src="./img/accesorios.jpg" class="d-block w-100" alt="...">
-                                                <div class="carousel-caption ">
-                                                        <a href="./pages/productos.html">
-                                                                <h3>Accesorios </h3>
-                                                        </a>
-                                                        <p>Accosorios para darle a tu hogar un extra de estilo y
-                                                                calidez..</p>
-                                                </div>
+</header>        
+<main> <!-- Aqui empieza la parte principal de la pagina-->
+        
+        <section class="hero">
+                <h1>Bienvenidos a AlmaViva Home & Deco</h1>
+                <p>Imagina un lugar donde cada rincón te susurra paz y alegría. Un espacio que te abraza con calidez y
+                        te invita a soñar despierto. Un refugio donde tu esencia se refleja en cada detalle</p>
+
+                <!-- comienza el codigo agregado por bootstrap-->
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="4000">
+                                        <img src="./img/Vela-sojs-prod.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption ">
+                                                <a href="./pages/productos.html">
+                                                        <h3>Velas de Soja </h3>
+                                                </a>
+                                                <p>Aromas para tu hogar.</p>
                                         </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                </button>
+                                <div class="carousel-item" data-bs-interval="4000">
+                                        <img src="./img/almohadones.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption ">
+                                                <a href="./pages/productos.html">
+                                                        <h3>Almohadones </h3>
+                                                </a>
+                                                <p>Dale estilo a tu descanso .</p>
+                                        </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="4000">
+                                        <img src="./img/accesorios.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption ">
+                                                <a href="./pages/productos.html">
+                                                        <h3>Accesorios </h3>
+                                                </a>
+                                                <p>Accosorios para darle a tu hogar un extra de estilo y
+                                                        calidez..</p>
+                                        </div>
+                                </div>
                         </div>
-                </section>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+        </section>
 
-        </main>
+</main>
 
         <footer> <!--Aqui empieza el footer -->
                 <h4>Nuestras Redes</h4>
