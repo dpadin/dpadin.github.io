@@ -42,7 +42,11 @@
         border-style: solid;
         border-color: #bbb5a8;
         position: relative;
-
+        &:hover {
+                border-style: solid;
+                border-width:  2px;
+                border-color: black;
+                }
         }
         .tarjetas-de-producto img
         {
@@ -63,7 +67,11 @@
             position: absolute;
             bottom: 35px;
             left:0px;
-    
+            & :hover{
+                    background-color: rgb(96, 53, 10);
+                    font-size: large;
+                    color: white;
+                    }
         }
     .tarjetas-de-producto h3
     {
