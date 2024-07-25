@@ -4,12 +4,52 @@
     margin : 0;                     /* elimina separaciones de los elementos*/
     box-sizing:borderbox;           /* setea ta,año del elemento*/
 }
-
+/* Variables*/
 $color-header:rgba(96, 53, 10, 0.587);
 $color-footer:rgba(96, 53, 10, 0.587);
-
 $color-fondo-body:rgba(211, 193, 175, 0.775);
 $color-fuente:rgb(96, 53, 10);
+
+/*Listas*/
+$fuentes-tipo :red,green ,blue;
+
+/*mapas*/
+$boton-productos:(
+    bg-color:#593e03,
+    fnt-color: white,
+    txt-align: center,
+    fnt-size:small,
+    no-link: text-decoration,
+    ancho: 100%,
+);
+
+/*Mixins*/
+
+@mixin flex ($flex,$direction,$justify,$align)
+{
+    display: $flex;
+    direction:$direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* Keyframes- Mueve el banner del Hero section */
+
+@keyframes slidein{
+    from{
+            margin-left:100%;
+            width:300;
+        }    
+    to {
+            margin-left:0%;
+            width:0;
+        }
+
+        }
+
+
+
+
 
 
 body                /* importar tipografia desde Google fonts   */                
@@ -18,7 +58,7 @@ body                /* importar tipografia desde Google fonts   */
 
         @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color:rgb(96, 53, 10) ;
+        color:$color-fuente;
         background-color: $color-fondo-body;
                 
 }

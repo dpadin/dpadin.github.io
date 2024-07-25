@@ -1,32 +1,52 @@
 .navbar{
 
-        /*background-color:#bbb5a8d6 !important;*/
         background-color: $color-header;
         color: $color-fuente !important;
+        
+        
+        @include flex(flex,row,space-between,center);
+        
+        // display: flex ;
+        // flex-direction: row ;
+        // justify-content: space-between!important;
+        // align-items: center !important;
 
-        display: flex ;
-        flex-direction: row ;
-        justify-content: space-between!important;
-        align-items: center !important;
         position:relative;
         }
 .navbar-brand img
-{
+        {
         margin: 10px;
         height: 80px;
         width: 80px;
         object-fit: cover;
-}
+        transition: 1s;
+        &:hover{
+                     
+                transform: rotateY(360deg);
+                }
+        }
+
+
 .navbar-toggler {                   /* tuve q usar position para ponerlo a la derecha*/
         position:absolute;
         right: 20px;
         top:25px;
 
 }
+
+
+.nav-link:hover{                /* cambia color de fondo al seleccionar el menu de la barra*/
+        background-color: $color-header !important; 
+        color: white !important;
+                }
+
+
 .dropdown-menu
-    {
-        background-color: #bbb5a8 !important;
-    }
+        {
+                background-color: #bbb5a8 !important;
+        }
+
+
 
 .container-fluid{
     width:fit-content !important;

@@ -4,30 +4,30 @@
         /* Ocupa todo el ancho de la pantalla*/
         height: auto;
         /** Ajusta el tamaño del main a la cantidad de fotos        */
-
-        color: rgb(96, 53, 10);
-
-        background-color: rgba(211, 193, 175, 0.775);
+        color: $color-fuente;
+        background-color: $color-fondo-body;
 
         background-image: linear-gradient(rgba(197, 187, 171, 0.699), rgba(208, 210, 175, 0.727)), url("../img/Background-image-index.jpg");
 
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
         }
 
         h1 {
-            color: rgb(96, 53, 10);
-            text-align: center;
-            font-size: xx-large;
+            color: $color-fuente;
+           font-size: xx-large;
+            //agrego shadow al titulo
+            text-shadow: 12px -11px 8px rgba(53,49,33,0.51);
+  
             }
+
+
+
 
         p                     /* Formatea el parrafo debajo del Bienvenidos    */
             {
                 text-align:center;
                     
                 height: auto;
-                color:rgb(96, 53, 10);
+                color: $color-fuente;
                 font-size:large;
             }
 

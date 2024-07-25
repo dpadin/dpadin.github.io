@@ -56,32 +56,36 @@
         }
     .tarjetas-de-producto a
         {
-            background-color: #593e03;
-            text-align: center;
-            color: white;
-            text-decoration: none;
-            font-size: small;
-           /* border-style: solid; */
-     
-            width: 100%;
+            /* Aplicacion de mapas*/    
+            background-color: map-get($boton-productos,bg-color);
+            text-align: map-get($map: $boton-productos, $key: txt-align);
+            color: map-get($map: $boton-productos, $key: fnt-color);
+            text-decoration: map-get($map: $boton-productos, $key:text-decoration );
+            font-size: map-get($map: $boton-productos, $key: fnt-size );
+            width: map-get($map: $boton-productos, $key:ancho);
+
             position: absolute;
             bottom: 35px;
             left:0px;
-            & :hover{
-                    background-color: rgb(96, 53, 10);
-                    font-size: large;
+            transition-duration: 500ms;
+
+            &:hover{
+                    background-color: green;
+                    font-size: larger;
                     color: white;
+                    transform: scale(1.1);
+                    
+
                     }
         }
     .tarjetas-de-producto h3
     {
-        background-color: #bbb5a843;
         text-align: center;
         font-size: large;
-        color: rgb(96, 53, 10);
         width:100%;
         padding: 0px;
         margin-bottom: 5%;
         position: absolute;
         bottom: 0px;
+
     }
