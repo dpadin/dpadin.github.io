@@ -1,9 +1,13 @@
 footer {
         background-color: $color-footer;
         color: $color-fuente;
-        height: auto;
         text-align: center;
- 
+       
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;             /* Footer height */
+
         }
 
 
@@ -18,21 +22,26 @@ footer {
 .redes {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: small;
-
+        background-color: $color-footer;
+        
+        div{
+            background-color: $color-footer;
         }
-
-.redes div a 
+    
+        a 
             {
             width: 100%;
             text-decoration: none;
             }
+        } 
+
 .GridRedes{
     color: $color-fuente;
     display: grid;
     grid-template-columns: 1fr 1fr;   /* no lleva commas entre los numeros!!!!!*/
-    /*   grid-template-rows:repeat(4);*/
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    width: 100%;
+  /*  grid-column-gap: 5px;
+    grid-row-gap: 5px; */
     
     grid-template-areas: 
     "fb fbt "
@@ -53,15 +62,16 @@ footer {
 {
     grid-area: fbt;
     text-align: left;
+    a
+    {
+        text-decoration: none;
+        color: $color-fuente;
+        &:hover{
+                font-size: medium;
+                }
+    }
 }
-.texto-fb a
-{
-    text-decoration: none;
-    color: $color-fuente;
-    &:hover{
-            font-size: medium;
-            }
-}
+
 
 .icono-x 
 {
@@ -73,14 +83,15 @@ footer {
 {
     grid-area: xt;
     text-align: left;
-}
-.texto-x a
-{
-    text-decoration: none;
-    color: $color-fuente;
-    &:hover{
-        font-size: medium;
-        }
+    a
+    {
+        text-decoration: none;
+        color: $color-fuente;
+        &:hover{
+            font-size: medium;
+            }
+    }
+    
 }
 
 
@@ -93,14 +104,15 @@ footer {
 {
     grid-area: instat;
     text-align:left;
-}
-.texto-instagram a
-{
-    text-decoration: none;
-    color: $color-fuente;
-    &:hover{
-        font-size: medium;
-        }
+    a
+    {
+        text-decoration: none;
+        color: $color-fuente;
+        &:hover{
+            font-size: medium;
+            }
+    }
+    
 }
 
 .icono-tiktok
@@ -108,20 +120,19 @@ footer {
     grid-area: tik;
     text-align: right;
 }
-.texto-tiktok
-{
-    grid-area: tikt;
-    text-align: left;
-}
-.texto-tiktok a
-{
-    text-decoration: none;
-    color: $color-fuente;
-    &:hover{
-        font-size: medium;
-        }
-}
+.texto-tiktok {
+                grid-area: tikt;
+                text-align: left;
 
+                a {
+                    text-decoration: none;
+                    color: $color-fuente;
+
+                    &:hover {
+                        font-size: medium;
+                    }
+                }
+                }
 
 
 .contactenos

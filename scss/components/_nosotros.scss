@@ -2,7 +2,7 @@
 .nosotros                  /** Clase para la pagina de servicios*/
     {   
         width: 100%;            /* Ocupa todo el ancho de la pantalla*/
-        height: 300px;          /** deja lugar para una foto*/
+        height: auto;          /** deja lugar para una foto*/
         text-align: center;   
         background-color: $color-fondo-body;
         color: $color-fuente;
@@ -19,8 +19,24 @@
             text-align: center;
             font-size:xx-large;
         }    
-
+    h3
+    {
+        
+        text-align: center;
+        font-size: large;
+    }        
     p       
         {
             font-size:medium;
         }    
+.video-nosotros
+        {
+        width: 1200;
+        height:450px;
+
+            iframe{
+                width: 90%;
+                height:90%;
+
+                }
+        }

@@ -35,7 +35,8 @@
 </head>
 
 <body> <!-- Aqui arranca el cuerpo de la pagina. Aplica formato usando class-->
-
+<div class="page-container">
+<div class="content-wrap">
 <header>
 <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="./index.html">
@@ -87,9 +88,9 @@
                 </div>
         </div>
 </nav>
-</header>        
+</header>
 <main> <!-- Aqui empieza la parte principal de la pagina-->
-        
+
         <section class="hero">
                 <h1>Bienvenidos a AlmaViva Home & Deco</h1>
                 <p>Imagina un lugar donde cada rincón te susurra paz y alegría. Un espacio que te abraza con calidez y
@@ -98,8 +99,10 @@
                 <!-- comienza el codigo agregado por bootstrap-->
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="4000">
-                                        <img src="./img/Vela-sojs-prod.jpg" class="d-block w-100" alt="Imagen de una vela de soja en un vaso de vidrio">
+                                <div class="carousel-item active c-item" data-bs-interval="4000">
+
+                                        <img src="./img/Vela-sojs-prod.jpg" class="d-block w-100 c-img"
+                                                alt="Imagen de una vela de soja en un vaso de vidrio">
                                         <div class="carousel-caption ">
                                                 <a href="./pages/productos.html">
                                                         <h3>Velas de Soja </h3>
@@ -107,8 +110,9 @@
                                                 <p>Aromas para tu hogar.</p>
                                         </div>
                                 </div>
-                                <div class="carousel-item" data-bs-interval="4000">
-                                        <img src="./img/almohadones.jpg" class="d-block w-100" alt="Muestra una foto de almohadones balñnco y beiges sobre un sillon confortable ">
+                                <div class="carousel-item c-item" data-bs-interval="4000">
+                                        <img src="./img/almohadones.jpg" class="d-block w-100 c-img"
+                                                alt="Muestra una foto de almohadones balñnco y beiges sobre un sillon confortable ">
                                         <div class="carousel-caption ">
                                                 <a href="./pages/productos.html">
                                                         <h3>Almohadones </h3>
@@ -116,8 +120,9 @@
                                                 <p>Dale estilo a tu descanso .</p>
                                         </div>
                                 </div>
-                                <div class="carousel-item" data-bs-interval="4000">
-                                        <img src="./img/accesorios.jpg" class="d-block w-100" alt="Muestra una imagen de un oso de adorno colgante en una habitacion muy calida">
+                                <div class="carousel-item c-item" data-bs-interval="4000">
+                                        <img src="./img/accesorios.jpg" class="d-block w-100 c-img"
+                                                alt="Muestra una imagen de un oso de adorno colgante en una habitacion muy calida">
                                         <div class="carousel-caption ">
                                                 <a href="./pages/productos.html">
                                                         <h3>Accesorios </h3>
@@ -138,9 +143,60 @@
                                 <span class="visually-hidden">Next</span>
                         </button>
                 </div>
-        </section>
+                <!--carousel productos-->
+                <h2>Oferta Rápidas -- Velas</h2>
 
-</main>
+                <!-- comienza el codigo agregado por bootstrap-->
+
+                <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                                <div class="carousel-item active c-item">
+                                        <img src="./img/vela-cono-carousel-productos.jpeg" class="d-block w-100 c-img"
+                                                alt="Vela de soja cono">
+                                        <div class="carousel-caption d-none d-md-block">
+                                                <h3>Vela Cono</h3>
+                                                <p>Diseño moderno </p>
+                                        </div>
+                                </div>
+                                <div class="carousel-item c-item">
+                                        <img src="./img/vela-carousel-vaso.jpeg" class="d-block w-100 c-img" alt="Vela de soja en vaso">
+                                        <div class="carousel-caption d-none d-md-block">
+                                                <h3>Vela en Vaso de Whisky</h3>
+                                                <p>Sobria y funcional</p>
+                                        </div>
+                                </div>
+                                <div class="carousel-item c-item">
+                                        <img src="./img/vela-carousel-caja.jpeg" class="d-block w-100 c-img" alt="Vela de soja en vaso ">
+                                        <div class="carousel-caption d-none d-md-block">
+                                                <h3>Vela en caja</h3>
+                                                <p>Ideal para tus regalos</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+
+
+        </section>
+        </div>
+<!--</main>-->
 
         <footer> <!--Aqui empieza el footer -->
                 <h4>Nuestras Redes</h4>
@@ -175,7 +231,7 @@
                         </div>
                 </section>
         </footer>
-
+</div>
         <div class="contactenos"> <!--Boton de whatsap-->
                 <img src="./img/whatsapp.png" alt="Icono de whatsap para pulsar y abrir la aplicacion de mensajeria">
                 <h5>Contactenos!</h5>
@@ -187,6 +243,7 @@
                 crossorigin="anonymous"></script>
         <script src="./js/main.js"></script>
 
+</main>
 
 </body>
 

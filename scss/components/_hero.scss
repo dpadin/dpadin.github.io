@@ -30,38 +30,37 @@
  
 /** Aqui las mosificaciones a la clase del carousel de Bootstrap*/
 
-.carousel-item{                 /* Este es el espacio de la imagen del carousel*/
-    height: 300px;  
-    margin: 10px;
+
+.c-item{
+            height: 700px;
+            width:100% ;
+            align-items: center;
+            p {
+                /* leyenda del carousel caption*/
+                text-align: left;
+                color: black;
+                background-color: rgba(255, 255, 255, 0.522);
+                width: fit-content;
+                padding: 2px;
+            }
+            a {
+                /* leyenda del carousel button*/
+                text-decoration: none;
+            }
+            h3{                 /* texto del boton sobre el carousel*/
+                text-align: left;
+                margin: 5px;
+                padding: 5px;
+                border-radius: 5%;
+                color:white;
+                background-color:rgba(96, 53, 10, 0.587);
+                width:fit-content;
+
+            }   
+
+        }
+.c-img{         /* clase para las imagenes del carousel*/
+        height: 100%;
+        width: 100%;
+        object-fit: cover;    
     }
-
-.carousel-item img{                 /* Este es el espacio de la imagen del carousel*/
-    height: 100%;
-    width: 80%;
-    object-fit: cover;
-    }
-
-
-.carousel-item p{                 /* leyenda del carousel caption*/
-    text-align: left;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.522);
-    width: fit-content;
-    padding:2px;
-    }
-
-.carousel-item a{                 /* leyenda del carousel button*/
-
-    text-decoration: none;
-    }
-
-.carousel-item h3{                 /* texto del boton sobre el carousel*/
-    text-align: left;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5%;
-    color:white;
-    background-color:rgba(96, 53, 10, 0.587);
-    width:fit-content;
-
-    }      

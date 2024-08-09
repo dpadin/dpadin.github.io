@@ -41,38 +41,70 @@
         .hero{              /* achica para comprimir el parrafo */
          
             height: auto;
-        }
-        .hero h2 { font-size:x-small; }
-        .productos h2  { font-size:small; }
-        .hero p
-        {
-            width: 100%;
-            text-align: center;
-            font-size:xx-small;
-        }
-    
-        .productos p
-        {
-            width: 100%;
-            text-align: center;
-            font-size:xx-small !important;
-        }
-    
-        .servicios h2  { font-size:small; }
+            h2 { font-size:x-small; }
+            h4 {font-size: x-small;}
+            p
+                {
+                    width: 100%;
+                    text-align: center;
+                    font-size:xx-small;
+                }
+             }
+        
+        .productos 
+            {
+                h2  { font-size:small; }
+                p
+                    {
+                        width: 100%;
+                        text-align: center;
+                        font-size:xx-small !important;
+                    }
+                }        
+        .servicios 
+                {
+                h2  { font-size:small; }
+                }
         .servicios-p1  { font-size:x-small;}
         .servicios-p2  { font-size:x-small; }       
     
-        .contacto h2  { font-size:small; }
-        .contacto h3  { font-size:x-small; }
+
+        .contacto{
+                    h2  { font-size:small; }
+                    h3  { font-size:x-small; }
+                    form
+                        {
+                        div input, textarea
+                            {
+                                width: 80%;
+                            }
+                        }    
+                    }
+                
         
+
         .nosotros h2  { font-size:small; }
         .nosotros h3  { font-size:x-small; }
     
-        .footrt {height: auto;}
+        footer
+             {
+             /*   height: auto;*/
+                width:100%;
+             }       
         .redes
         {
+            
             width: 40%;
             height: auto;
         }
-        .redes h4 {font-size: x-small;}
+
+        .video-nosotros
+        {
+        width: 600;
+        height:250px;
+
+        }
+
+
     }
+
